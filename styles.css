@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: black;
+  }
+  
+  .container {
+    text-align: center;
+    color: white;
+  }
+  
+  .circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: rgb(255, 0, 0);
+    position: relative;
+    animation: glowing 1s infinite alternate;
+    margin: 0 auto;
+  }
+  
+  .timer {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  
+  button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 0, 0);
+    border: none;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: rgb(200, 0, 0);
+  }
+  
+  @keyframes glowing {
+    from {
+      box-shadow: 0 0 10px rgb(255, 0, 0);
+    }
+    to {
+      box-shadow: 0 0 20px rgb(255, 0, 0), 0 0 30px rgb(255, 0, 0);
+    }
+  }
+  
